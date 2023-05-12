@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Filter from "../components/filter";
+import { Box } from "@mui/material";
 
 export default function Home() {
   return (
@@ -9,7 +11,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main></main>
+      <main>
+        <Box
+          sx={{
+            width: "100vw",
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Filter />
+        </Box>
+      </main>
     </div>
   );
 }
